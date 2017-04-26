@@ -18,9 +18,7 @@ export class BotNavComponent implements OnInit {
 
 
   constructor(private vcRef: ViewContainerRef) {
-    //modal.overlay.defaultViewContainer = vcRef;
-    this.compNextName = Constant.Next + Constant.ComponentName[1];
-    this.compPreviousName = '';  
+    
   }
 
   ngOnInit() {
