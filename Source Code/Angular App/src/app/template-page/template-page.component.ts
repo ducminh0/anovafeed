@@ -4,7 +4,7 @@ import { AppStorageService } from '../services/AppStorage.service'
 import { LoggerService } from '../services/Logger.service'
 import { UtilityService } from '../services/Utility.service'
 import * as Constant from '../consts/globals'
-import { SelectRouteData } from '../models/DataPages.model'
+
 import { Modal } from 'angular2-modal/plugins/bootstrap'
 
 @Component({

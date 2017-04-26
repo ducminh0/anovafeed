@@ -6,7 +6,6 @@ import 'rxjs/add/operator/map';
 import { Deserialize, deserializeAs } from 'cerialize';
 import {Subscription} from 'rxjs';
 import {style, state, animate, transition, trigger} from '@angular/core';
-import * as WizardModel from './models/Wizard.model' 
 import { AppStorageService } from './services/AppStorage.service'
 import {LoggerService} from './services/Logger.service'
 

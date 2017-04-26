@@ -3,11 +3,11 @@ import { Http, URLSearchParams, RequestOptions } from "@angular/http"
 import { ConfigService } from './Config.service'
 import { LoggerService } from './Logger.service'
 import { UtilityService } from './Utility.service'
-import { SelecDocumentData, SelecParticipantData, SummaryData, SelectRouteData } from '../models/DataPages.model'
+
 import * as Constant from '../consts/globals'
 import {Observable, Subject} from 'rxjs'
 import {TestData} from '../models/TestData.models'
-import {UrlSource} from '../models/Wizard.model'
+
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
 /**
