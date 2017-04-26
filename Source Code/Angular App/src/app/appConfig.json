@@ -1,0 +1,8 @@
+{
+  "Configuration":
+    {
+    "apiUrl": "http://fp-tduong22-vm:34132",
+    "mode": "Development",
+    "enableLog": "false"
+    }
+}

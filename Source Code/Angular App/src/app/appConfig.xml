@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <apiUrl>http://fp-tduong22-vm:34132</apiUrl>
+    <mode>Development</mode>
+    <enableLog>false</enableLog>    
+</Configuration>
+

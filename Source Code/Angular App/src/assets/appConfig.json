@@ -1,0 +1,5 @@
+{
+  "apiUrl": "http://fp-tduong22-vm:34132/api/Wizard/GetAppStorage",
+  "mode": "Development",
+  "enableLog": "false"
+}
