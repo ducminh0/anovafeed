@@ -17,6 +17,8 @@ import { Ng2TableModule } from 'ng2-table';
 import { PaginationModule } from 'ng2-bootstrap';
 import { CustomFormsModule } from 'ng2-validation';
 import {BusyModule} from 'angular2-busy';
+import { InputComponentComponent } from './input-component/input-component.component';
+import { OutputComponentComponent } from './output-component/output-component.component';
 
 export function startupServiceFactory(startupService: AppStorageService): Function {
     return () => startupService.init();
@@ -26,7 +28,9 @@ export function startupServiceFactory(startupService: AppStorageService): Functi
     AppComponent,  
     TopNavComponent,
     BotNavComponent,
-    TemplatePageComponent    
+    TemplatePageComponent,
+    InputComponentComponent,
+    OutputComponentComponent    
   ],
   imports: [
     BrowserModule,
