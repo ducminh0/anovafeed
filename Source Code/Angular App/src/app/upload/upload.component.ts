@@ -11,5 +11,9 @@ export class UploadComponent implements OnInit {
 
   ngOnInit() {
   }
+  upload(){
+    var x  = document.getElementById("file-upload");
+    var b = 0;
+  }
 
 }
