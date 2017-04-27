@@ -32,6 +32,7 @@ import { BotNavComponent } from './bot-nav/bot-nav.component';
 import { TemplatePageComponent } from './template-page/template-page.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { UploadComponent } from './upload/upload.component';
 
 export function startupServiceFactory(startupService: AppStorageService): Function {
   return () => startupService.init();
@@ -45,7 +46,8 @@ export function startupServiceFactory(startupService: AppStorageService): Functi
     LoginComponent,
     NotfoundComponent,
     InputComponentComponent,
-    OutputComponentComponent
+    OutputComponentComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
