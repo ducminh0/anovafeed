@@ -6,16 +6,19 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class LoginService {
-    constructor() { }
+    private _loginStatus: boolean;
+    constructor(private http: Http) { }
 
     checkLogin(loginData: any) {
-
+        return this.http.get("http://59015dd9df801b00113c4d74.mockapi.io/login/logindata/1").map(res => res.json());
     }
 
-    parseToMd5(plainText): string {
-        // do parse to md5
-        var encrypted = "" + plainText;
-
-        return encrypted;
+    getLoginStatus(): boolean {
+        return this._loginStatus;
     }
+
+    setLoginStatus(status: boolean) {
+        this._loginStatus = status;
+    }
+
 }

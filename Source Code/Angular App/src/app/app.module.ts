@@ -22,6 +22,8 @@ import { ConfigService } from "./services/Config.service";
 import { LoggerService } from "./services/Logger.service";
 import { AppStorageService } from './services/AppStorage.service';
 import { UtilityService } from './services/Utility.service';
+import { LoginService } from './services/login.service';
+import { LoginGuard } from './guards/login.guard';
 
 // components
 import { AppComponent } from './app.component';
@@ -43,7 +45,7 @@ export function startupServiceFactory(startupService: AppStorageService): Functi
     LoginComponent,
     NotfoundComponent,
     InputComponentComponent,
-    OutputComponentComponent   
+    OutputComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,8 @@ export function startupServiceFactory(startupService: AppStorageService): Functi
     AppStorageService,
     LoggerService,
     UtilityService,
+    LoginService,
+    LoginGuard,
     {
       provide: APP_INITIALIZER,
       useFactory: startupServiceFactory, //read config by config service
