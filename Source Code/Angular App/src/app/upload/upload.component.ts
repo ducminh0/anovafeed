@@ -10,10 +10,17 @@ export class UploadComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
-  upload(){
-    var x  = document.getElementById("file-upload");
-    var b = 0;
+  upload() {
+
   }
 
+  handleFile(e) {
+    var files = e.target.files;
+    var f = files[0];
+    var reader = new FileReader();
+    var name = f.name;
+    var sasddas = 0;
+  }
 }
